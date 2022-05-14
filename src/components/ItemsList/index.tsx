@@ -31,8 +31,8 @@ const ItemsMock = [
 
 const ItemsList = () => {
   return (
-    <div className={style.items_list_wrapper}>
-      <p>Список товаров</p>
+    <div className={style.items_list__wrapper}>
+      <p>Список товаров:</p>
       <div className={style.items_list}>
         {ItemsMock.map((item) => {
           const { id, itemName, itemDescription } = item;
