@@ -1,7 +1,13 @@
 .page_header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-height: 60px;
-  background-color: rgb(175, 175, 175);
+  background-color: rgb(204, 255, 122);
+}
+.header_menu {
+  display: flex;
+  // flex-direction: row;
+  // justify-content: space-around;
+  
 }

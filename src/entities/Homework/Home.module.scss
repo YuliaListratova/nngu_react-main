@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px rgba(79, 155, 255, 0.3);
+}
+
+.buttonRoll {
+  background-color: rgb(25, 190, 255);
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+}
+.buttonRoll:hover {
+  background: rgba(1, 181, 252, 0.452);
+}
