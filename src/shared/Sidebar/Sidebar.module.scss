@@ -12,4 +12,16 @@
   gap: 10px;
   list-style: none;
   padding-left: 15px;
+  &_item {
+    text-decoration: none;
+    color: black;
+  }
+}
+// .sidebar_menu_item {
+//   text-decoration: none;
+//   color: black;
+// }
+
+.active {
+  font-weight: 700px;
 }
