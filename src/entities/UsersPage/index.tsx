@@ -28,10 +28,19 @@ const UsersPage = () => {
     }, 1500);
   }, []);
 
-  return !usersData ? <div>Загрузка...</div> : <UsersPageComponent usersDataAttr={usersData} />;
+  return !usersData ? (
+    <div>Загрузка...</div>
+  ) : (
+    <UsersPageComponent
+      usersDataAttr={usersData}
+      // current={function (): void {
+      //   throw new Error('Function not implemented.');
+      // }}
+    />
+  );
 };
 
 export default UsersPage;
-function useNavigation() {
-  throw new Error('Function not implemented.');
-}
+// function useNavigation() {
+//   throw new Error('Function not implemented.');
+// }
