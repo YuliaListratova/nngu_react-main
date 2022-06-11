@@ -18,7 +18,7 @@ const UsersPage = () => {
 
   useEffect(() => {
     if (pathname === '/') {
-      navigate('user_page');
+      navigate('/users_page');
     }
   }, [pathname, navigate]);
 
@@ -28,19 +28,10 @@ const UsersPage = () => {
     }, 1500);
   }, []);
 
-  return !usersData ? (
-    <div>Загрузка...</div>
-  ) : (
-    <UsersPageComponent
-      usersDataAttr={usersData}
-      // current={function (): void {
-      //   throw new Error('Function not implemented.');
-      // }}
-    />
-  );
+  return !usersData ? <div>Загрузка...</div> : <UsersPageComponent usersDataAttr={usersData} />;
 };
 
 export default UsersPage;
-// function useNavigation() {
-//   throw new Error('Function not implemented.');
-// }
+function useNavigation() {
+  throw new Error('Function not implemented.');
+}

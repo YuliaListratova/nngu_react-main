@@ -3,7 +3,7 @@
   height: 100%;
   width: 280px;
   padding: 60px 0;
-  background-color: rgb(218, 235, 156);
+  background-color: rgb(209, 209, 209);
 }
 
 .sidebar_menu {
@@ -12,11 +12,13 @@
   gap: 10px;
   list-style: none;
   padding-left: 15px;
+
   &_item {
     text-decoration: none;
     color: black;
   }
 }
+
 .active {
   font-weight: 700;
 }

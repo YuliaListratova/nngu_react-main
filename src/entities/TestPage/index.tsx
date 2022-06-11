@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TestPageComponent from './component/TestPageComponent';
+import TestPageComponent from './components/TestPageComponent';
 
 const TestPage = () => {
   const [isShow, setIsShow] = useState(true);

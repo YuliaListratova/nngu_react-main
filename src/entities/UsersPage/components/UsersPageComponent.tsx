@@ -6,10 +6,9 @@ import UserCard from './UserCard';
 
 interface IProps {
   usersDataAttr: IUsers[];
-  // current: () => void;
 }
 
-const UsersPageComponent: FC<IProps> = ({ usersDataAttr /* current */ }) => {
+const UsersPageComponent: FC<IProps> = ({ usersDataAttr }) => {
   return (
     <div>
       <p>Список пользователей:</p>
@@ -27,7 +26,7 @@ const UsersPageComponent: FC<IProps> = ({ usersDataAttr /* current */ }) => {
           <div>Пользователи не найдены.</div>
         )}
 
-        <Pagination limit={3} itemsAmount={usersDataAttr.length} /* currentPage={current} */ />
+        <Pagination limit={3} itemsAmount={usersDataAttr.length} />
       </div>
     </div>
   );

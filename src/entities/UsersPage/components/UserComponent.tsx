@@ -1,4 +1,3 @@
-import exp from 'constants';
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -8,7 +7,7 @@ const UserComponent = () => {
   return (
     <>
       <button type="button" onClick={() => navigate(-1)}>
-        Назад
+        Вернуться назад
       </button>
       <div>Страница пользователя {id}</div>
     </>
