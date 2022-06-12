@@ -44,7 +44,7 @@ const UsersPageComponent: FC<IProps> = ({ usersDataAttr }) => {
             const { id, name, email } = user;
             return (
               <React.Fragment key={`UserId:${id}`}>
-                <UserCard id={id || 0} name={name} email={email} />
+                <UserCard id={id} name={name} email={email} />
               </React.Fragment>
             );
           })

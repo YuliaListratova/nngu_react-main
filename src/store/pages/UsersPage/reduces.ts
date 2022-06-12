@@ -1,5 +1,5 @@
 import { IUsers } from '../../../interfaces/IUsers';
-import { CREATE_USER, SET_USERS_DATA } from './action';
+import { CREATE_USER, SET_USERS_DATA } from './actions';
 import { IUsersState, UsersReducerAction } from './interfaces';
 
 const initialState: IUsersState = {
