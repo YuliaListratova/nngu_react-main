@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { IUsers } from '../../../interfaces/IUsers';
 import Pagination from '../../../shared/Pagination';
-import { createUserAction } from '../../../store/pages/UsersPage/action';
+import { createUserAction } from '../../../store/pages/UsersPage/actions';
 import style from '../UsersPage.module.scss';
 import UserCard from './UserCard';
 
@@ -44,7 +44,7 @@ const UsersPageComponent: FC<IProps> = ({ usersDataAttr }) => {
             const { id, name, email } = user;
             return (
               <React.Fragment key={`UserId:${id}`}>
-                <UserCard id={id} name={name} email={email} />
+                <UserCard id={id || 0} name={name} email={email} />
               </React.Fragment>
             );
           })
