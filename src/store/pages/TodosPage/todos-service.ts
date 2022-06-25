@@ -1,5 +1,5 @@
-import { $api } from '../../../api/axios-instance';
+import { $api } from '../../../api/api-instance';
 
 export const TodosService = {
-  getTodos: (_page: number, _limit: number) => $api.get('/todos', { params: { _page, _limit } }),
+  getTodos: (params: { _page: number; _limit: number }) => $api.get('/todos', { params }),
 };

@@ -1,4 +1,4 @@
-import { IFetchTodosAction, IFetchTodosActions, ITodosState, TodosActionTypes } from './interfaces';
+import { IFetchTodosActions, ITodosState, TodosActionTypes } from './interfaces';
 
 const initialState: ITodosState = {
   todosData: [],

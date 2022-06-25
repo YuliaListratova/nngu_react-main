@@ -11,7 +11,7 @@ export const sidebarConfig = [
   },
   {
     id: 3,
-    name: 'Список Todo',
+    name: 'Список задач',
     path: '/todos_page',
   },
 ];
